@@ -1,0 +1,21 @@
+server:
+  port: 8083
+
+spring:
+  application:
+    name: indian-bank-deposit-service
+
+  datasource:
+    url: jdbc:mysql://localhost:3306/deposit_service_dev
+    username: root
+    password: Rishikumar12345
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+
